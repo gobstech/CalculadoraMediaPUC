@@ -5,7 +5,7 @@
 ---
 
 ## 📝 Resumo
-Este é um software desenvolvido em linguagem **C** projetado para automatizar o cálculo das médias finais de diversas disciplinas da **PUC-Campinas**. O programa considera os pesos específicos de provas, testes e atividades práticas de cada matéria do 3º semesstre do curso de Engenharia de Computação, fornecendo o resultado de aprovação ou reprovação de forma imediata e precisa.
+Este é um software desenvolvido em linguagem **C** projetado para automatizar o cálculo das médias finais de diversas disciplinas da **PUC-Campinas**. O programa considera os pesos específicos de provas, testes e atividades práticas de cada matéria do 3º semestre do curso de Engenharia de Computação, fornecendo o resultado de aprovação ou reprovação de forma imediata e precisa.
 
 ---
 
