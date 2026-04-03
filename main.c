@@ -44,6 +44,7 @@ int readOption() {
     printf("3 - Cálculo II\n");
     printf("4 - Física do Movimento\n");
     printf("5 - Ética e Antropologia Teológica\n");
+    printf("6 - Métodos Experimentais de Física e Tratamento de Dados\n");
     printf("\nDigite o número correspondente: ");
 
     // O scanf retorna o número de itens lidos com sucesso
@@ -247,6 +248,32 @@ void Etica() {
     else printf("\nReprovado!\n");
 }
 
+void MetodosFisica() {
+    clearScreen();
+    float nota = 0, multiplicacaoProvas = 1, mediaAtividadesIndividuais = 0, mediaAtividadesGrupo = 0, mediaFinal = 0;
+
+    int i = 1;
+
+    for (i; i <= 2; i++) {
+        printf("--- %dª PROVA --- ", i);
+        nota = lerNota("Digite a nota: ");
+        multiplicacaoProvas *= nota;
+    }
+
+    printf("--- MÉDIA DAS ATIVIDADES INDIVIDUAIS --- ");
+    mediaAtividadesIndividuais = lerNota("Digite a média: ");
+
+    printf("--- MÉDIA DAS ATIVIDADES EM GRUPO --- ");
+    mediaAtividadesGrupo = lerNota("Digite a média: ");
+
+    mediaFinal = 0.5 * sqrt(multiplicacaoProvas) + 0.2 * mediaAtividadesIndividuais + 0.3 * mediaAtividadesGrupo;
+
+    printf("Média Final: %.2f", mediaFinal);
+
+    if (mediaFinal >= 5) printf ("\nAprovado!\n");
+    else printf("\nReprovado!\n");
+}
+
 // Função principal do programa (chama as funções modularizadas de acordo com o fluxo do programa)
 int main(void) {
     clearScreen();
@@ -278,6 +305,10 @@ int main(void) {
                 case 5:
                     isValid = 1;
                     Etica();
+                    break;
+                case 6:
+                    isValid = 1;
+                    MetodosFisica();
                     break;
                 default:
                     if (opcaoSelecionada != -1) printf("\nOpcão inválida!\n");
