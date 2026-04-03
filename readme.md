@@ -22,7 +22,7 @@ O projeto nasceu da necessidade de simplificar a conferência de notas acadêmic
     3.  Cálculo II
     4.  Física do Movimento
     5.  Ética e Antropologia Teológica
-
+    6.  Métodos Experimentais de Física e Tratamento de Dados 
 ---
 
 ## 🛠 Tecnologias Usadas
